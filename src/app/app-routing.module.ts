@@ -20,7 +20,7 @@ const routes: Routes = [
     path: 'contact', component: ContactPageComponent
   }, 
   {
-    path: '', redirectTo: '/home', pathMatch: 'full'
+    path: '', redirectTo: 'home', pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 ];
