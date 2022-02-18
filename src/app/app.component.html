@@ -3,14 +3,31 @@
     width: 100%;
     position: absolute;
     bottom: 0;
-    padding: 10px;
   }
+  .js-spacer {
+    flex: 1 1 auto;
+  }
+
+  .js-name-heading{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .js-util-center{
+    text-align: center;
+  }
+  
 </style>
 
 <mat-toolbar color="primary" role="banner">
-  <span>Jordan Schnur</span>
+  <a class="js-name-heading" href="/home">
+    <span>Jordan Schnur</span>
+  </a>
+  <span class="js-spacer"></span>
   <button mat-button routerLink="/" color="link">Home</button>
   <button mat-button routerLink="/about" color="link">About</button>
+  <button mat-button routerLink="/portfolio" color="link">Portfolio</button>
   <button mat-button routerLink="/blog" color="link">Blog</button>
   <button mat-button routerLink="/contact" color="link">Contact</button>
 </mat-toolbar>
@@ -24,7 +41,9 @@
 
   <!-- Footer -->
   <footer>
-    This is a footer dude.
+    <mat-toolbar class="js-util-center">
+      <span>My Application</span>
+    </mat-toolbar>
   </footer>
 
 </div>
